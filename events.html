@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+
+        /*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@500&family=Montserrat:wght@400;500;600&display=swap");
+
+/* =============== VARIABLES CSS =============== */
+:root {
+    --header-height: 3.5rem;
+  
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --first-color: hsl(230, 62%, 56%);
+    --title-color: hsl(230, 70%, 16%);
+    --text-color: hsl(230, 16%, 45%);
+    --border-color: hsl(230, 50%, 90%);
+    --white-color: hsl(0, 0%, 100%);
+    --body-color: hsl(230, 100%, 96%);
+    --container-color: hsl(230, 100%, 97%);
+  
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "Montserrat", sans-serif;
+    --second-font: "Montagu Slab", serif;
+    --biggest-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+  }
+  
+  body {
+      font-family: Arial, sans-serif;
+      background-color: var(--container-color);
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+  }
+
+  
+  /*===== header =====*/
+   
+  header {
+      background-color: var(--container-color);
+      padding: 20px;
+      margin: 0 100px auto 135px;
+      text-align: center;
+      position: relative;
+    }
+    
+  header h1 {
+      font-size: var(--h2-font-size);
+      /* margin: 0; */
+    }
+    
+    .container-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    h1{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo {
+      width: 100px;
+      height: 50px;
+      margin-left: 100px;
+    }
+    
+    .search-bar {
+      display: flex;
+      width: 400px;
+    }
+    
+    .search-bar input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 200px;
+    }
+    
+    .search-bar button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .bismilah-button {
+      padding: 10px 20px;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    input[type="text"]{
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+  }  
+  
+  /* ===== toggle ===== */
+    
+    #menuToggle
+    {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+    
+    }
+    
+    #menuToggle a
+    {
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s ease;
+    }
+    
+    #menuToggle a:hover
+    {
+    color: var(--first-color);
+    }
+    
+    
+    #menuToggle input
+    {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0; /* hide this  */
+    z-index: 4; /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+  }
+    #menuToggle span
+    {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+    }
+    
+    #menuToggle span:first-child
+    {
+    transform-origin: 0% 0%;
+    }
+    
+    #menuToggle span:nth-last-child(2)
+    {
+    transform-origin: 0% 100%;
+    }
+    
+    #menuToggle input:checked ~ span
+    {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+    }
+    
+    #menuToggle input:checked ~ span:nth-last-child(3)
+    {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    
+    #menuToggle input:checked ~ span:nth-last-child(2)
+    {
+    transform: rotate(-45deg) translate(0, -1px);
+    }
+    
+    #menu
+    {
+    position: absolute;
+    width: 100px;
+    height: 800px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+    
+    #menu li
+    {
+    padding: 10px 0;
+    font-size: 22px;
+    }
+    
+    #menuToggle input:checked ~ ul
+    {
+    transform: none;
+    }
+
+.title{
+    margin-top: 50px;
+}
+
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .event-table{
+            margin-top: 50px;
+        }
+
+        .event-calendar{
+            margin-top: 50px;
+            margin: 0px 60px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+        th, td {
+            transition: background-color 0.3s ease;
+        }
+        @media screen and (max-width: 600px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            th {
+                background-color: #333;
+                color: white;
+            }
+            th, td {
+                padding: 8px;
+                text-align: right;
+                border: none;
+            }
+            tr {
+                margin-bottom: 10px;
+                border-bottom: 2px solid #ddd;
+            }
+            td:before {
+                content: attr(data-label);
+                float: left;
+                font-weight: bold;
+                color: #4CAF50;
+            }
+        }
+        .tables-container {
+            display: flex;
+            margin: 0px 60px;
+        }
+        .tables-container table {
+            width: 50%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tables-container th, .tables-container td {
+            padding: 12px;
+            text-align: left;
+            border: none;
+        }
+        .tables-container thead {
+            display: none;
+        }
+        .tables-container tbody tr {
+            border-bottom: 1px solid #ddd;
+        }
+        .tables-container tbody tr:last-child {
+            border-bottom: none;
+        }
+        .date, .time, .event {
+            display: flex;
+            align-items: center;
+        }
+        .date i, .time i, .event i {
+            margin-right: 8px;
+            color: #333;
+        }
+        .event {
+            text-decoration: none;
+            font-weight: bold;
+            color: var(--first-color);
+        }
+
+
+
+        /* ======= footer ======= */
+
+    .footer {
+            margin-top: 50px;
+            background-color: var(--container-color);
+            padding: 20px 0;
+            text-align: left;
+        }
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .footer-column {
+            flex: 1;
+            padding: 0 20px;
+        }
+        .footer-column h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-size: var(--h3-font-size);
+        }
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-column ul li {
+            margin-bottom: 8px;
+            color: var(--text-color);
+        }
+        .footer-column ul li a {
+            text-decoration: none;
+            color: var(--text-color);
+        }
+        .footer-column ul li a:hover {
+            text-decoration: none;
+            color: var(--first-color);
+        }
+        .footer .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+        .footer .social-icons a {
+            text-decoration: none;
+            color: #333;
+            font-size: 24px;
+        }
+        .footer .social-icons a:hover {
+            color: var(--first-color);
+        }
+        .footer .copyright {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+        }
+
+        .footer-column p{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>   
+
+    <header>
+        <div class="container-header">
+            <div class="title-logo">
+                <h1><img src="assets/img/logo.png" alt="Waikiki Library Logo" class="logo">Waikiki Library</h1>
+            </div>
+          <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button id="btn-search">Search</button>
+          </div>
+          <p class="bismilah-button">𝚃𝚘𝚍𝚊𝚢 𝚊 𝚛𝚎𝚊𝚍𝚎𝚛, 𝚝𝚘𝚖𝚘𝚛𝚛𝚘𝚠 𝚊 𝚕𝚎𝚊𝚍𝚎𝚛.</p>
+        </div>
+    
+    </header>
+    
+    <nav role="navigation">
+        <div id="menuToggle">
+           <input type="checkbox" />
+           <span></span>
+           <span></span>
+           <span></span>
+           <ul id="menu">
+              <a href="/main page.html"><li class="list">Home</li></a>
+              <a href="/WAKIKI LIBRARY-ikram/Genre.html"><li class="list">Genre</li></a>
+              <a href="/events.html"><li class="list">Events</li></a>
+              <a href="/profile.html"><li class="list">Profile</li></a>
+              <a href="feedback.html" target="_self"><li>Feedback</li></a>
+           </ul>
+        </div>
+     </nav>
+
+
+    <h1 class="title">Welcome to Waikiki Library`s Events</h1>
+
+<div class="container-all">
+    <h2 class="event-calendar">Events Calendar</h2>
+    <div class="tables-container">
+        <table>
+            <tbody>
+                <tr>
+                    <td class="date"><i class="fa fa-calendar"></i>05 Jun 2024</td>
+                    <td class="time"><i class="fa fa-clock-o"></i>09:00AM - 04:00PM</td>
+                    <td class="event"><i class="fa fa-info-circle"><a href="#" class="event"></i>PROGRAM KNOWLEDGE FEST: STORY TIME FOR KIDS</a></td>
+                </tr>
+                <tr>
+                    <td class="date"><i class="fa fa-calendar"></i>07 Jun 2024</td>
+                    <td class="time"><i class="fa fa-clock-o"></i>09:00AM - 11:00AM</td>
+                    <td class="event"><i class="fa fa-info-circle"><a href="#" class="event"></i>BENGKEL SPEED READING: E-BOOK FAIR</td></a>
+                </tr>
+                <tr>
+                    <td class="date"><i class="fa fa-calendar"></i>14 Jun 2024</td>
+                    <td class="time"><i class="fa fa-clock-o"></i>11:30AM - 01:00PM</td>
+                    <td class="event"><i class="fa fa-info-circle"><a href="#" class="event"></i>FORUM BERSAMA ALUMNI: AUTHOR READINGS AND Q&A SESSION</td></a>
+                </tr>
+                <tr>
+                    <td class="date"><i class="fa fa-calendar"></i>20 Jun 2024</td>
+                    <td class="time"><i class="fa fa-clock-o"></i>02:00PM - 04:00PM</td>
+                    <td class="event"><i class="fa fa-info-circle"><a href="#" class="event"></i>WEBINAR LITERASI MAKLUMAT: EDUCATIONAL WEBINAR</td></a>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <tbody>
+                <tr>
+                    <td class="date"><i class="fa fa-calendar"></i>25 Jun 2024</td>
+                    <td class="time"><i class="fa fa-clock-o"></i>09:00AM - 04:00PM</td>
+                    <td class="event"><i class="fa fa-info-circle"><a href="#" class="event"></i>PROGRAM KNOWLEDGE FEST: READ, EXPLORE & COLLABORATE</td></a>
+                </tr>
+                <tr>
+                    <td class="date"><i class="fa fa-calendar"></i>05 July 2024</td>
+                    <td class="time"><i class="fa fa-clock-o"></i>09:00AM - 11:00AM</td>
+                    <td class="event"><i class="fa fa-info-circle"><a href="#" class="event"></i>BENGKEL SPEED READING: BACK TO BASIC</td></a>
+                </tr>
+                <tr>
+                    <td class="date"><i class="fa fa-calendar"></i>15 July 2024</td>
+                    <td class="time"><i class="fa fa-clock-o"></i>11:30AM - 01:00PM</td>
+                    <td class="event"><i class="fa fa-info-circle"><a href="#" class="event"></i>FORUM BERSAMA ALUMNI: STEREOTAIP SEORANG PUSTAKAWAN</td></a>
+                </tr>
+                <tr>
+                    <td class="date"><i class="fa fa-calendar"></i>20 July 2024</td>
+                    <td class="time"><i class="fa fa-clock-o"></i>02:00PM - 04:00PM</td>
+                    <td class="event"><i class="fa fa-info-circle"><a href="#" class="event"></i>WEBINAR LITERASI MAKLUMAT: CITATION OF SOURCES USING APA</td></a>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <img src="/assets/img/logo.png" alt="Waikiki Library Logo" style="width: 100px;">
+                <p>WAIKIKI LIBRARY</p>
+            </div>
+            <div class="footer-column">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Awards</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Terms of services</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Our team</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <ul>
+                    <li>+601127538377 (Azlan)</li>
+                    <li>Waikiki_library@email.com</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Social</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/home"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            © All Rights Reserved By Waikiki Library
+        </div>
+    </footer>
+
+    <!-- Include Font Awesome for the icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/main page.css">
+
+      <title>Responsive book website - Bedimcode</title>
+   </head>
+   <body>
+      
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+
+         <nav role="navigation">
+            <div id="menuToggle">
+               <input type="checkbox" />
+               <span></span>
+               <span></span>
+               <span></span>
+               <ul id="menu">
+                  <a href="main page.html"><li class="list">Home</li></a>
+                  <a href="WAKIKI LIBRARY-ikram/Genre.html"><li class="list">Genre</li></a>
+                  <a href="/events.html"><li class="list">Events</li></a>
+                  <a href="profile.html"><li class="list">Profile</li></a>
+                  <a href="feedback.html" target="_self"><li>Feedback</li></a>
+               </ul>
+            </div>
+         </nav>
+
+         <nav class="nav container">
+            <a href="#" class="nav__logo">
+               <img src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABdFkSnfuOkqVqnB0g3Nw3jvM8fx_Ot04vFph5zbmis7E7-OoA4OH_j8CfVb_BzGsVbEv9CWOXmKIgRhUGtnjm3bigF48PLndzK7Hw0MnlKuz.png?r=aef" width="90px"> WAIKIKI LIBRARY
+            </a>
+
+            <div class="nav__menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="#home" class="nav__link active-link">
+                        <i class="ri-home-line"></i>
+                        <span>Home</span>
+                     </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#featured" class="nav__link">
+                        <i class="ri-book-3-line"></i>
+                        <span>Featured</span>
+                     </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#discount" class="nav__link">
+                        <i class="ri-price-tag-3-line"></i>
+                        <span>Events</span>
+                     </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#new" class="nav__link">
+                        <i class="ri-bookmark-line"></i>
+                        <span>New Books</span>
+                     </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#testimonial" class="nav__link">
+                        <i class="ri-message-3-line"></i>
+                        <span>Testimonial</span>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+
+            <div class="nav__actions">
+               <!-- Search button -->
+               <i class="ri-search-line search-button" id="search-button"><link rel="stylesheet" href=""></i>
+               
+               <!-- Login button -->
+               <a href="login page.html"><i class="ri-user-line login-button" id="login-button"> 
+               </i></a>
+
+               <!-- Theme button -->
+               <i class="ri-moon-line change-theme" id="theme-button"></i>
+            </div>
+         </nav>  
+      </header>
+
+      <!--==================== SEARCH ====================-->
+      <div class="search" id="search-content">
+         <form action="" class="search__form">
+            <i class="ri-search-line search__icon"></i>
+            <input type="search" placeholder="What are you looking for?" class="search__input">
+         </form>
+
+         <i class="ri-close-line search__close" id="search-close"></i>
+      </div>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <div class="home__container container grid">
+               <div class="home__data">
+                  <h1 class="home__title">
+                     Welcome to <br>
+                     Waikiki Library
+                  </h1>
+
+                  <p class="home__description">
+                     Find the best e-books from your favorite 
+                     writers, explore hundreds of books with all 
+                     possible categories, take advantage of the 
+                     free reading and much more.                     
+                  </p>
+
+                  <a href="/WAKIKI LIBRARY-ikram/Genre.html" class="button">Explore Now</a>
+               </div>
+
+               <div class="home__images">
+                  <div class="home__swiper swiper">
+                     <div class="swiper-wrapper">
+                        <article class="home__article swiper-slide">
+                           <img src="/assets/img/book-1.1 - Copy.jpeg" alt="image" class="home__img">
+                        </article>
+
+                        <article class="home__article swiper-slide">
+                           <img src="assets/img/book-1.2.jpeg" alt="image" class="home__img">
+                        </article>
+
+                        <article class="home__article swiper-slide">
+                           <img src="assets/img/book-1.3.jpeg" alt="image" class="home__img">
+                        </article>
+
+                        <article class="home__article swiper-slide">
+                           <img src="assets/img/book-1.4.jpg" alt="image" class="home__img">
+                        </article>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== SERVICES ====================-->
+         <section class="services section">
+            <div class="services__container container grid">
+               <article class="services__card">
+                  <i class="ri-book-line"></i>
+                  <h3 class="services__title">Free reading</h3>
+                  <p class="services__description">enjoy unlimited free reading</p>
+               </article>
+
+               <article class="services__card">
+                  <i class="ri-lock-2-line"></i>
+                  <h3 class="services__title">Secure</h3>
+                  <p class="services__description">100% Secure from external user</p>
+               </article>
+
+               <article class="services__card">
+                  <i class="ri-customer-service-2-line"></i>
+                  <h3 class="services__title">24/7 Support</h3>
+                  <p class="services__description">Call us anytime</p>
+               </article>
+            </div>
+         </section>
+
+         <!--==================== FEATURED ====================-->
+         <section class="featured section" id="featured">
+            <h2 class="section__title">
+               Featured Books
+            </h2>
+
+            <div class="featured__container container">
+               <div class="featured__swiper swiper">
+                  <div class="swiper-wrapper">
+                     <article class="featured__card swiper-slide">
+                        <img src="/assets/img/book-1.1.jpeg" alt="image" class="featured__img">
+
+                        <h2 class="featured__title">Tower Of God</h2>
+                        <div class="featured__prices"></div>
+
+                        <a href="/assets/book details/Tower Of God/book details-Tower of god.html"><button class="button">Learn More</button></a>
+
+                        <div class="featured__actions">
+
+                           <button class="heart-button"><i class="ri-heart-3-line"></i></button>
+
+                        </div>
+                     </article>
+
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/book-1.2.1.jpeg" alt="image" class="featured__img">
+
+                        <h2 class="featured__title">Unordinary</h2>
+                        <div class="featured__prices"></div>
+
+                        <a href="/assets/book details/Unordinary/book details-Unordinary.html"><button class="button">Learn More</button></a>
+
+                        <div class="featured__actions">
+                           
+                           <button class="heart-button"><i class="ri-heart-3-line"></i></button>
+                           
+                        </div>
+                     </article>
+
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/book-1.16.jpeg" alt="image" class="featured__img">
+
+                        <h2 class="featured__title">I Love Yoo</h2>
+                        <div class="featured__prices"></div>
+
+                        <a href="/assets/book details/I Love Yoo/book details-I Love Yoo.html"><button class="button">Learn More</button></a>
+
+                        <div class="featured__actions">
+                           
+                           <button class="heart-button"><i class="ri-heart-3-line"></i></button>
+                           
+                        </div>
+                     </article>
+
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/book-1.8.jpeg" alt="image" class="featured__img">
+
+                        <h2 class="featured__title">Lumine</h2>
+                        <div class="featured__prices"></div>
+
+                        <a href="/assets/book details/Lumine/book details-Lumine.html"><button class="button">Learn More</button></a>
+
+                        <div class="featured__actions">
+                           
+                           <button class="heart-button"><i class="ri-heart-3-line"></i></button>
+                           
+                        </div>
+                     </article>
+                     
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/book-1.9.jpeg" alt="image" class="featured__img">
+
+                        <h2 class="featured__title">Villain To Kill</h2>
+                        <div class="featured__prices"></div>
+
+                        <a href="/assets/book details/Villain To Kill/book details-Villain To Kill.html"><button class="button">Learn More</button></a>
+
+                        <div class="featured__actions">
+                           
+                           <button class="heart-button"><i class="ri-heart-3-line"></i></button>
+                           
+                        </div>
+                     </article>
+
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/book-1.10.jpeg" alt="image" class="featured__img">
+
+                        <h2 class="featured__title">Sweet Home</h2>
+                        <div class="featured__prices"></div>
+
+                        <a href="/assets/book details/Sweet Home/book details-Sweet Home.html"><button class="button">Learn More</button></a>
+
+                        <div class="featured__actions">
+                           
+                           <button class="heart-button"><i class="ri-heart-3-line"></i></button>
+                          
+                        </div>
+                     </article>
+
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/book-1.11.jpeg" alt="image" class="featured__img">
+
+                        <h2 class="featured__title">A Day Before Us</h2>
+                        <div class="featured__prices"></div>
+
+                        <a href="/assets/book details/A Day Before Us/book details-A Day Before Us.html"><button class="button">Learn More</button></a>
+
+                        <div class="featured__actions">
+                           
+                           <button class="heart-button"><i class="ri-heart-3-line"></i></button>
+                           
+                        </div>
+                     </article>
+
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/book-1.12.jpeg" alt="image" class="featured__img">
+
+                        <h2 class="featured__title">Lookism</h2>
+                        <div class="featured__prices"></div>
+
+                        <a href="/assets/book details/Lookism/book details-Lookism.html"><button class="button">Learn More</button></a>
+
+                        <div class="featured__actions">
+                           
+                           <button class="heart-button"><i class="ri-heart-3-line"></i></button>
+                           
+                        </div>
+                     </article>
+
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/book-1.13.jpeg" alt="image" class="featured__img">
+
+                        <h2 class="featured__title">Lore Olympus</h2>
+                        <div class="featured__prices"></div>
+
+                        <a href="/assets/book details/Lore Olympus/book details-Lore Olympus.html"><button class="button">Learn More</button></a>
+
+                        <div class="featured__actions">
+                          
+                           <button class="heart-button"><i class="ri-heart-3-line"></i></button>
+                           
+                        </div>
+                     </article>
+
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/book-1.14.jpeg" alt="image" class="featured__img">
+
+                        <h2 class="featured__title">Solo leveling</h2>
+                        <div class="featured__prices"></div>
+
+                        <a href="/assets/book details/Solo Leveling/book details-Solo Leveling.html"><button class="button">Learn More</button></a>
+
+                        <div class="featured__actions">
+                           
+                           <button class="heart-button"><i class="ri-heart-3-line"></i></button>
+                        
+                        </div>
+                     </article>
+                  </div>
+
+                  <div class="swiper-button-prev">
+                     <i class="ri-arrow-left-s-line"></i>
+                  </div>
+
+                  <div class="swiper-button-next">
+                     <i class="ri-arrow-right-s-line"></i>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== Event ====================-->
+         <section class="discount section" id="discount">
+            <div class="discount__container container grid">
+               <div class="discount__data">
+                  <h2 class="discount__title section__title">
+                     Events
+                  </h2>
+
+                  <p class="discount__description">
+                     We're thrilled to invite you to our upcoming e-comics website event. It's going to be a fantastic time, and we'd love for you to be a part of it. Don't missed out!
+                  </p>
+
+                  <a href="events.html" class="button">Explore</a>
+               </div>
+
+               <div class="discount__images">
+                  <img src="assets/img/book-1.16.jpeg" alt="" class="discount__img-1">
+                  <img src="assets/img/book-1.17.jpeg" alt="" class="discount__img-2">
+               </div>
+            </div>
+         </section>
+
+         <!--==================== NEW BOOKS ====================-->
+         <section class="new section" id="new">
+            <h2 class="section__title">
+               New Books
+            </h2>
+
+            <div class="new__container container">
+               <div class="new__swiper swiper">
+                  <div class="swiper-wrapper">
+                     <a href="#" class="new__card swiper-slide">
+                        <img src="assets/img/book-1.1.jpeg" alt="image" class="new__img">
+
+                        <div>
+                           <h2 class="new__title">Tower Of God</h2>
+                           <div class="new__prices">
+                           </div>
+   
+                           <div class="new__stars">
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-half-fill"></i>
+                           </div>
+                        </div>
+                     </a>
+
+                     <a href="#" class="new__card swiper-slide">
+                        <img src="assets/img/book-1.2.1.jpeg" alt="image" class="new__img">
+
+                        <div>
+                           <h2 class="new__title">Unordinary</h2>
+   
+                           <div class="new__stars">
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-half-fill"></i>
+                           </div>
+                        </div>
+                     </a>
+
+                     <a href="#" class="new__card swiper-slide">
+                        <img src="assets/img/book-1.3.1.jpg" alt="image" class="new__img">
+
+                        <div>
+                           <h2 class="new__title">Eleceed</h2>
+   
+                           <div class="new__stars">
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-half-fill"></i>
+                           </div>
+                        </div>
+                     </a>
+
+                     <a href="#" class="new__card swiper-slide">
+                        <img src="assets/img/book-1.17.jpeg" alt="image" class="new__img">
+
+                        <div>
+                           <h2 class="new__title">Wish You Were Dead</h2>
+   
+                           <div class="new__stars">
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-half-fill"></i>
+                           </div>
+                        </div>
+                     </a>
+
+                     <a href="#" class="new__card swiper-slide">
+                        <img src="assets/img/book-1.16.jpeg" alt="image" class="new__img">
+
+                        <div>
+                           <h2 class="new__title">I Love Yoo</h2>
+   
+                           <div class="new__stars">
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-half-fill"></i>
+                           </div>
+                        </div>
+                     </a>
+
+                     <a href="#" class="new__card swiper-slide">
+                        <img src="assets/img/book-1.15.jpeg" alt="image" class="new__img">
+
+                        <div>
+                           <h2 class="new__title">Let's Play</h2>
+   
+                           <div class="new__stars">
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-half-fill"></i>
+                           </div>
+                        </div>
+                     </a>
+
+                     <a href="#" class="new__card swiper-slide">
+                        <img src="assets/img/book-1.14.jpeg" alt="image" class="new__img">
+
+                        <div>
+                           <h2 class="new__title">Solo Leveling</h2>
+   
+                           <div class="new__stars">
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-half-fill"></i>
+                           </div>
+                        </div>
+                     </a>
+
+                     <a href="#" class="new__card swiper-slide">
+                        <img src="assets/img/book-1.13.jpeg" alt="image" class="new__img">
+
+                        <div>
+                           <h2 class="new__title">Lore Olympus</h2>
+
+                           <div class="new__stars">
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-half-fill"></i>
+                           </div>
+                        </div>
+                     </a>
+
+                     <a href="#" class="new__card swiper-slide">
+                        <img src="assets/img/book-1.12.jpeg" alt="image" class="new__img">
+
+                        <div>
+                           <h2 class="new__title">Lookism</h2>
+   
+                           <div class="new__stars">
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-half-fill"></i>
+                           </div>
+                        </div>
+                     </a>
+
+                     <a href="#" class="new__card swiper-slide">
+                        <img src="assets/img/book-1.11.jpeg" alt="image" class="new__img">
+
+                        <div>
+                           <h2 class="new__title">A Day Before Us</h2>
+   
+                           <div class="new__stars">
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-half-fill"></i>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="new__swiper swiper">
+                  <div class="swiper-wrapper">
+                     <a href="#" class="new__card swiper-slide">
+                        <img src="assets/img/book-1.10.jpeg" alt="image" class="new__img">
+
+                        <div>
+                           <h2 class="new__title">Sweet Home</h2>
+   
+                           <div class="new__stars">
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-half-fill"></i>
+                           </div>
+                        </div>
+                     </a>
+
+                     <a href="#" class="new__card swiper-slide">
+                        <img src="assets/img/book-1.9.jpeg" alt="image" class="new__img">
+
+                        <div>
+                           <h2 class="new__title">Villain To Kill</h2>
+   
+                           <div class="new__stars">
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-half-fill"></i>
+                           </div>
+                        </div>
+                     </a>
+
+                     <a href="#" class="new__card swiper-slide">
+                        <img src="assets/img/book-1.8.jpeg" alt="image" class="new__img">
+
+                        <div>
+                           <h2 class="new__title">Lumine</h2>
+   
+                           <div class="new__stars">
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-half-fill"></i>
+                           </div>
+                        </div>
+                     </a>
+
+                     <a href="#" class="new__card swiper-slide">
+                        <img src="assets/img/book-1.7.jpeg" alt="image" class="new__img">
+
+                        <div>
+                           <h2 class="new__title">God Of Highschool</h2>
+   
+                           <div class="new__stars">
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-half-fill"></i>
+                           </div>
+                        </div>
+                     </a>
+
+                     <a href="#" class="new__card swiper-slide">
+                        <img src="assets/img/book-1.6.jpeg" alt="image" class="new__img">
+
+                        <div>
+                           <h2 class="new__title">The apocathery Prince</h2>
+   
+                           <div class="new__stars">
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-half-fill"></i>
+                           </div>
+                        </div>
+                     </a>
+
+                     <a href="#" class="new__card swiper-slide">
+                        <img src="assets/img/book-1.5.jpeg" alt="image" class="new__img">
+
+                        <div>
+                           <h2 class="new__title">True Beauty</h2>
+   
+                           <div class="new__stars">
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-half-fill"></i>
+                           </div>
+                        </div>
+                     </a>
+
+                     <a href="#" class="new__card swiper-slide">
+                        <img src="assets/img/book-1.4.1.jpg" alt="image" class="new__img">
+
+                        <div>
+                           <h2 class="new__title">Noblesse</h2>
+   
+                           <div class="new__stars">
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-half-fill"></i>
+                           </div>
+                        </div>
+                     </a>
+
+                     <a href="#" class="new__card swiper-slide">
+                        <img src="assets/img/book-1.3.1.jpg" alt="image" class="new__img">
+
+                        <div>
+                           <h2 class="new__title">Eleceed</h2>
+   
+                           <div class="new__stars">
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-half-fill"></i>
+                           </div>
+                        </div>
+                     </a>
+
+                     <a href="#" class="new__card swiper-slide">
+                        <img src="assets/img/book-1.2.1.jpeg" alt="image" class="new__img">
+
+                        <div>
+                           <h2 class="new__title">Unordinary</h2>
+   
+                           <div class="new__stars">
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-half-fill"></i>
+                           </div>
+                        </div>
+                     </a>
+
+                     <a href="#" class="new__card swiper-slide">
+                        <img src="assets/img/book-1.1.jpeg" alt="image" class="new__img">
+
+                        <div>
+                           <h2 class="new__title">Tower Of God</h2>
+   
+                           <div class="new__stars">
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-half-fill"></i>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== JOIN ====================-->
+         <section class="join section">
+            <div class="join__container">
+               <video  autoplay muted loop id="myvideo"><source src="/assets/video/tower of god_main page.mp4" type="video/mp4" alt="image" class="join__bg"></video>
+
+               <div class="join__data container grid">
+                  <h2 class="join__title section__title">
+                     Subscribe To Receive <br>
+                     The Latest Updates
+                  </h2>
+   
+                  <form action="" class="join__form">
+                     <input type="email" placeholder="Enter email" class="join__input">
+                     <button type="submit" class="join__button button">Subscribe</button>
+                  </form>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== TESTIMONIAL ====================-->
+         <section class="testimonial section" id="testimonial">
+            <h2 class="section__title">
+               Customer Opinions
+            </h2>
+
+            <div class="testimonial__container container">
+               <div class="testimonial__swiper swiper">
+                  <div class="swiper-wrapper">
+                     <article class="testimonial__card swiper-slide">
+                        <img src="/assets/img/testimonial-perfil-1.jpg" alt="img" class="testimonial__img">
+
+                        <h2 class="testimonial__title">Azlan</h2>
+                        <p class="testimonial__description">
+                           "This website is a treasure trove for book lovers! The variety of e-books available is incredible, and the download process is seamless. Highly recommended!"
+                        </p>
+
+                        <div class="testimonial__stars">
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-half-fill"></i>
+                        </div>
+                     </article>
+
+                     <article class="testimonial__card swiper-slide">
+                        <img src="assets/img/testimonial-perfil-2.jpg" alt="img" class="testimonial__img">
+
+                        <h2 class="testimonial__title">Nadzrin</h2>
+                        <p class="testimonial__description">
+                           "I love the user-friendly interface and the extensive collection of e-books. It's easy to find exactly what I'm looking for, and the quality of the e-books is excellent."
+                        </p>
+
+                        <div class="testimonial__stars">
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-half-fill"></i>
+                        </div>
+                     </article>
+
+                     <article class="testimonial__card swiper-slide">
+                        <img src="assets/img/testimonial-perfil-3.jpg" alt="img" class="testimonial__img">
+
+                        <h2 class="testimonial__title">Ikram</h2>
+                        <p class="testimonial__description">
+                           "Fantastic selection of e-books and great deals! I've discovered so many new authors and series. The reading experience on my device is smooth."
+                        </p>
+
+                        <div class="testimonial__stars">
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-half-fill"></i>
+                        </div>
+                     </article>
+
+                     <article class="testimonial__card swiper-slide">
+                        <img src="assets/img/testimonial-perfil-4.jpg" alt="img" class="testimonial__img">
+
+                        <h2 class="testimonial__title">Nurhadi</h2>
+                        <p class="testimonial__description">
+                           "Excellent site with a wide variety of e-books! I appreciate the clear categories and the detailed descriptions. It's so easy to find interesting books to read."
+                        </p>
+
+                        <div class="testimonial__stars">
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-half-fill"></i>
+                        </div>
+                     </article>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <div>
+               <a href="#" class="footer__logo">
+                  <img src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABdFkSnfuOkqVqnB0g3Nw3jvM8fx_Ot04vFph5zbmis7E7-OoA4OH_j8CfVb_BzGsVbEv9CWOXmKIgRhUGtnjm3bigF48PLndzK7Hw0MnlKuz.png?r=aef" width="90px"> WAIKIKI LIBRARY
+               </a>
+
+               <p class="footer__description">
+                  Find and explore the best <br>
+                  eBooks from all your <br>
+                  favorite writers.
+               </p>
+            </div>
+
+            <div class="footer__data grid">
+               <div>
+                  <h3 class="footer__title">About</h3>
+
+                  <ul class="footer__links">
+                     <li>
+                        <a href="#" class="footer__link">Awards</a>
+                     </li>
+
+                     <li>
+                        <a href="#" class="footer__link">FAQs</a>
+                     </li>
+
+                     <li>
+                        <a href="#" class="footer__link">Privacy policy</a>
+                     </li>
+                     
+                     <li>
+                        <a href="#" class="footer__link">Terms of services</a>
+                     </li>
+                  </ul>
+               </div>
+
+               <div>
+                  <h3 class="footer__title">Company</h3>
+
+                  <ul class="footer__links">
+                     <li>
+                        <a href="#" class="footer__link">Blogs</a>
+                     </li>
+
+                     <li>
+                        <a href="#" class="footer__link">Community</a>
+                     </li>
+
+                     <li>
+                        <a href="#" class="footer__link">Our team</a>
+                     </li>
+
+                     <li>
+                        <!-- <a href="#" class="footer__link">Help center</a> -->
+                     </li>
+                  </ul>
+               </div>
+
+               <div>
+                  <h3 class="footer__title">Contact</h3>
+
+                  <ul class="footer__links">
+                     <li>
+                        <address class="footer__info">
+                           +601127538377 <br>
+                           (Azlan) 
+                        </address>
+                     </li>
+
+                     <li>
+                        <address class="footer__info">
+                           Waikiki_library@email.com <br>
+                           
+                        </address>
+                     </li>
+                  </ul>
+               </div>
+
+               <div>
+                  <h3 class="footer__title">Social</h3>
+
+                  <div class="footer__social">
+                     <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-facebook-circle-line"></i>
+                     </a>
+
+                     <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-instagram-line"></i>
+                     </a>
+
+                     <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-twitter-x-line"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <span class="footer__copy">
+            &#169; All Rights Reserved By Waikiki Library
+         </span>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-line"></i>
+      </a>
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="assets/js/scrollreveal.min.js"></script>
+
+      <!--=============== SWIPER JS ===============-->
+      <script src="assets/js/swiper-bundle.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>

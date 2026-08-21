@@ -1,0 +1,67 @@
+/*========================= image container =========================*/
+
+
+.header-section h2{
+  text-align: left;
+  margin: 10px 10px;
+}
+
+.image-container{
+  text-align: center;
+  width: 180px;
+  margin: 5px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item-list img.book-cover {
+  display: block;
+  text-align: center;
+  margin: 0;
+  width: 175px;
+  height: 250px;
+  background-color: yellow;
+}
+
+/* --- star rating --- */
+/* Star Rating */
+.star-rating {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;/* Adjust the size of the stars */
+  color: #ffca08; /* Color of the filled stars */
+}
+
+.star {
+  margin: 0 3px; /* Space between stars */
+}
+
+.star.filled {
+  color: #ffca08; /* Color of filled stars */
+}
+
+.star {
+  color: #ccc; /* Color of empty stars */
+}
+
+
+/* --- addlist button --- */
+.addbtn{
+  background-color: whitesmoke;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-size: 11px;
+}
+
+.addbtn:hover{
+  color: white;
+  background-color: green;
+}
+
+p{
+  height: 32px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}

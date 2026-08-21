@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="assets/css/profile-watchlist.css">
+    <link rel="stylesheet" href="assets/css/Genre.css">
+    <link rel="stylesheet" href="assets/css/profile-continue-watching.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container-header">
+            <div class="title-logo">
+                <h2><img src="assets/img/logo.png" alt="Waikiki Library Logo" class="logo">Waikiki Library</h2>
+            </div>
+          <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button id="btn-search">Search</button>
+          </div>
+          <p class="bismilah-button">𝚃𝚘𝚍𝚊𝚢 𝚊 𝚛𝚎𝚊𝚍𝚎𝚛, 𝚝𝚘𝚖𝚘𝚛𝚛𝚘𝚠 𝚊 𝚕𝚎𝚊𝚍𝚎𝚛.</p>
+        </div>
+    </header>
+
+    <style>
+        .logo{
+            font-size: medium;
+        }
+    </style>
+    
+    <nav role="navigation">
+        <div id="menuToggle">
+           <input type="checkbox" />
+           <span></span>
+           <span></span>
+           <span></span>
+           <ul id="menu">
+              <a href="/main page.html"><li class="list">Home</li></a>
+              <a href="/WAKIKI LIBRARY-ikram/Genre.html"><li class="list">Genre</li></a>
+              <a href="/events.html"><li class="list">Events</li></a>
+              <a href="/profile.html"><li class="list">Profile</li></a>
+              <a href="feedback.html" target="_self"><li>Feedback</li></a>
+           </ul>
+        </div>
+     </nav>
+
+    <div class="container-main">
+        <div class="main">
+            <div class="navbar">
+                <a href="profile.html" class="linked"><button class="bttn nav-btn">Profile</button></a>
+                <a href="profile-continue-watching.html" class="linked"><button class="bttn nav-btn">Continue Watching</button></a>
+                <a href="profile-watchlist.html" class="linked"><button class="bttn nav-btn">Watch List</button></a>
+            </div>
+
+            <style>
+                .navbar{
+                    margin-top: -30px;
+                    padding: 10px 10px;
+                    margin-left: 30px;
+                    text-decoration: none;
+                }
+                .linked{
+                    text-decoration: none;
+                }
+            </style>
+
+            <div class="content-main">
+
+                <div class="item-list">
+
+                    <div class="history ">
+                      <!-- History items will be dynamically added here -->
+                    </div>
+        
+                </div>
+        
+            </div>
+        </div>
+    </div>
+    
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <img src="assets/img/" alt="Waikiki Library Logo" style="width: 150px;">
+                <p>Find and explore the best eBooks from all your favorite writers.</p>
+            </div>
+            <div class="footer-column">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Awards</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Terms of services</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Our team</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <ul>
+                    <li>+601127538377 (Azlan)</li>
+                    <li>Waikiki_library@email.com</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Social</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            © All Rights Reserved By Waikiki Library
+        </div>
+      </footer>
+
+    <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/button.js"></script>
+    <script src="assets/js/profile-watchlist.js"></script>
+</body>
+</html>

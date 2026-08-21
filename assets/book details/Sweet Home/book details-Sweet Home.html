@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waikiki Library</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/book details//Sweet Home/book details-Sweet Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container-header">
+          <img src="/assets/img/logo.png" alt="Waikiki Library Logo" class="logo">
+          <h1>Waikiki Library</h1>
+          <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+          </div>
+          <p class="bismilah-button">"𝙱𝚘𝚘𝚔𝚜 𝚊𝚛𝚎 𝚝𝚑𝚎 𝚖𝚒𝚛𝚛𝚘𝚛𝚜 𝚘𝚏 𝚝𝚑𝚎 𝚜𝚘𝚞𝚕."</p>
+        </div>
+
+    </header>
+
+    <nav role="navigation">
+        <div id="menuToggle">
+           <input type="checkbox" />
+           <span></span>
+           <span></span>
+           <span></span>
+           <ul id="menu">
+              <a href="/main page.html"><li class="list">Home</li></a>
+              <a href="/WAKIKI LIBRARY-ikram/Genre.html"><li class="list">Genre</li></a>
+              <a href="/events.html"><li class="list">Events</li></a>
+              <a href="/profile.html"><li class="list">Profile</li></a>
+              <a href="/feedback.html" target="_self"><li>Feedback</li></a>
+           </ul>
+        </div>
+     </nav>
+    
+    <main class="container mt-5">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="/assets/img/book-1.10.jpeg" alt="Book Cover" class="img-fluid">
+                <img src="/assets/img/sweet home.png" class="QR">
+            </div>
+            <div class="col-md-9">
+
+                <video  class="custom-video" controls >
+                    <source src="/assets/video/sweet home (trailer).mp4" type="video/mp4">
+                </video>
+            <style>
+.custom-video {
+width: 50%; 
+height: auto; 
+float: right;
+}
+            </style>
+
+                <h2>Title</h2>
+                <p><strong>Author:</strong> <span id="author">Unknown</span></p>
+                <p><strong>Year of Publication:</strong> <span id="year">Unknown</span></p>
+                <p><strong>Ongoing:</strong> <span id="ongoing">Unknown</span></p>
+                <p><strong>Latest Chapter:</strong> <span id="latest-chapter">Unknown</span></p>
+                <p><strong>Rating:</strong></p>
+                <div class="star-rating">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                    <p><strong>Description:</strong></p>
+                    <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel semper lacus, ac gravida lorem. Phasellus non felis massa. Sed lacinia nisi id sapien bibendum, in finibus arcu facilisis.</p>
+
+                </div>
+                
+            </div>
+        </div>
+
+        <div>
+            <button class="button" >Start Read</button>
+            
+        </div>
+        <div>
+            <a href="https://web.whatsapp.com/"><img src="/assets/img/whatsapp share button.webp" alt="whatsapp" class="img-whatsapp"></a>
+        </div>
+        <style>
+            .button{
+
+                background-color: #007bff;
+                border-radius:6px ;
+                margin-left: 285px;
+                color: white;
+                border-style: none;
+                padding: 10px 15px;
+                }
+
+            .button:hover{
+                background-color:#1178d3 ;
+                }
+
+            .img-whatsapp{
+                width: 130px;
+                margin-left: 975px;
+                margin-top: -85px;
+            }
+        </style>
+        
+        <section class="mt-5">
+            <h3>Comments section:</h3>
+            <div id="comments">
+                <!-- Comments will be dynamically added here -->
+            </div>
+            <form id="commentForm">
+                <div class="form-group">
+                    <label for="commentText">Leave a comment:</label>
+                    <textarea class="form-control" id="commentText" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <img src="/assets/img/logo.png" alt="Waikiki Library Logo" style="width: 100px;">
+                <p>WAIKIKI LIBRARY</p>
+            </div>
+            <div class="footer-column">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Awards</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Terms of services</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Our team</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <ul>
+                    <li>+601127538377 (Azlan)</li>
+                    <li>Waikiki_library@email.com</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Social</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/home"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            © All Rights Reserved By Waikiki Library
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/assets/book details/Sweet Home/book details-Sweet Home.js"></script>
+</body>
+</html>

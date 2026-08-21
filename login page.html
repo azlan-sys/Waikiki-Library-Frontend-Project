@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neumorphism Login/Signup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+          <!--=============== FAVICON ===============-->
+          <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+          <!--=============== REMIXICONS ===============-->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    
+    <style>
+
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@500&family=Montserrat:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(230, 62%, 56%);
+  --title-color: hsl(230, 70%, 16%);
+  --text-color: hsl(230, 16%, 45%);
+  --border-color: hsl(230, 50%, 90%);
+  --white-color: hsl(0, 0%, 100%);
+  --body-color: hsl(230, 100%, 96%);
+  --container-color: hsl(230, 100%, 97%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Montserrat", sans-serif;
+  --second-font: "Montagu Slab", serif;
+  --biggest-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1150px) {
+  :root {
+    --biggest-font-size: 3.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--container-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .logo {
+            background: url(/assets/img/login-logo.jpg);
+            width: 128px;
+            height: 128px;
+            border-radius: 50%;
+            margin: 0 auto;
+            box-shadow: 0px 0px 2px #5f5f5f, 0px 0px 0px 5px #ecf0f3, 8px 8px 15px #a7aaaf, -8px -8px 15px #fff;
+        }
+
+        .container {
+            width: 350px;
+            padding: 40px;
+            background-color: #e0e0e0;
+            border-radius: 20px;
+            box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffffff;
+            text-align: center;
+            position: absolute;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            background-color: rgb(191, 230, 242);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .form-group input {
+            width: 90%;
+            padding: 15px;
+            border: none;
+            border-radius: 12px;
+            background-color: #e0e0e0;
+            box-shadow: inset 4px 4px 8px #bebebe, inset -4px -4px 8px #ffffff;
+            font-size: 16px;
+            color: #333;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .form-group input:focus {
+            box-shadow: inset 2px 2px 4px #bebebe, inset -2px -2px 4px #ffffff;
+        }
+
+        button {
+            outline: none;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            padding: 15px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #02c8db;
+            color: white;
+            box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffffff;
+            transition: box-shadow 0.3s ease;
+        }
+
+        button:hover {
+            box-shadow: inset 4px 4px 8px #bebebe, inset -4px -4px 8px #ffffff;
+        }
+
+        .toggle-link, .forgot-password-link {
+            display: block;
+            margin-top: 15px;
+            color: #007bff;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .toggle-link:hover, .forgot-password-link:hover {
+            color: #0056b3;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .visible {
+            display: block;
+            animation: fadeIn 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+.close-button {
+    display: block;
+    width: 30px;
+    height: 30px; 
+    color: #000000; 
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    
+}
+
+.close-button a{
+    text-decoration: none;
+}
+
+.close-button a:hover{
+    color: var(--first-color);
+}
+
+    </style>
+</head>
+<body>
+    <audio id="submitAudio" src="/assets/sound/button-pressed-38129.mp3" preload="auto"></audio>
+
+    <div class="container visible" id="sign-in-container">
+        <div class="close-button">
+            <a href="main page.html">&#10006;</a>
+        </div>
+        <div class="logo"></div>
+        <h2>Waikiki Library</h2>
+        <form id="sign-in-form">
+            <div class="form-group">
+                <label for="signin-email">Email</label>
+                <input type="email" id="signin-email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="signin-password">Password</label>
+                <input type="password" id="signin-password" name="password" required>
+            </div>
+            <a href="main page.html"><button type="submit">Log In</button></a>
+            <span class="toggle-link" onclick="toggleForms('signup')">Don't have an account? Sign Up</span>
+        </form>
+    </div>
+
+    <div class="container hidden" id="sign-up-container">
+        <div class="close-button">
+            <a href="main page.html">&#10006;</a>
+        </div>
+        <h2>Sign Up</h2>
+        <form id="sign-up-form">
+            <div class="form-group">
+                <label for="signup-name">Name</label>
+                <input type="text" id="signup-name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="signup-email">Email</label>
+                <input type="email" id="signup-email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="signup-password">Password</label>
+                <input type="password" id="signup-password" name="password" required>
+            </div>
+            <button type="submit">Sign Up</button>
+            <span class="toggle-link" onclick="toggleForms('signin')">Already have an account? Sign In</span>
+        </form>
+    </div>
+
+    <div class="container hidden" id="forgot-password-container">
+        <h2>Forgot Password</h2>
+        <form id="forgot-password-form">
+            <div class="form-group">
+                <label for="forgot-email">Email</label>
+                <input type="email" id="forgot-email" name="email" required>
+            </div>
+            <button type="submit">Submit</button>
+            <span class="toggle-link" onclick="toggleForms('signin')">Remembered? Sign In</span>
+        </form>
+    </div>
+
+    <script>
+        function playButtonClickSound() {
+            const audio = document.getElementById('submitAudio');
+            audio.play();
+        }
+
+        function toggleForms(formType) {
+            const signInContainer = document.getElementById('sign-in-container');
+            const signUpContainer = document.getElementById('sign-up-container');
+            const forgotPasswordContainer = document.getElementById('forgot-password-container');
+
+            if (formType === 'signin') {
+                signInContainer.classList.add('visible');
+                signInContainer.classList.remove('hidden');
+                signUpContainer.classList.add('hidden');
+                signUpContainer.classList.remove('visible');
+                forgotPasswordContainer.classList.add('hidden');
+                forgotPasswordContainer.classList.remove('visible');
+            } else if (formType === 'signup') {
+                signUpContainer.classList.add('visible');
+                signUpContainer.classList.remove('hidden');
+                signInContainer.classList.add('hidden');
+                signInContainer.classList.remove('visible');
+                forgotPasswordContainer.classList.add('hidden');
+                forgotPasswordContainer.classList.remove('visible');
+            } else if (formType === 'forgot-password') {
+                forgotPasswordContainer.classList.add('visible');
+                forgotPasswordContainer.classList.remove('hidden');
+                signInContainer.classList.add('hidden');
+                signInContainer.classList.remove('visible');
+                signUpContainer.classList.add('hidden');
+                signUpContainer.classList.remove('visible');
+            }
+        }
+
+        function redirectToIndex() {
+            window.location.href = 'profile.html'; // Redirect to profile page
+        }
+
+        document.getElementById('sign-in-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const email = document.getElementById('signin-email').value;
+            const password = document.getElementById('signin-password').value;
+            const currentUser = { email, password, username: 'User' }; // Add username or other data as needed
+
+            localStorage.setItem('currentUser', JSON.stringify(currentUser));
+            playButtonClickSound();
+            setTimeout(redirectToIndex, 500); // Wait for the audio to play before redirecting
+        });
+
+        document.getElementById('sign-up-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            playButtonClickSound();
+            setTimeout(() => {
+                toggleForms('signin');
+            }, 500); // Wait for the audio to play before showing the sign-in form
+        });
+
+        document.getElementById('forgot-password-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            playButtonClickSound();
+            toggleForms('forgot-password');
+        });
+    </script>
+</body>
+</html>

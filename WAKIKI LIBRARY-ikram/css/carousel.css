@@ -1,0 +1,44 @@
+/*========================= carousel =========================*/
+
+
+.container{
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+div.header-section{
+  background-color: white;
+  padding: 1px;
+  text-align: center ;
+}
+
+.carousel-view {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: whitesmoke;
+}
+
+.item-list{
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  width: 100%;
+  background-color: transparent;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+button svg {
+  fill: #333;
+}
+
+button:hover svg {
+  fill: #000;
+}

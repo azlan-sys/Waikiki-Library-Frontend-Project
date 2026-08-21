@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Example</title>
+    <link rel="stylesheet" href="/WAKIKI LIBRARY-ikram/css/Genre.css">
+    <link rel="stylesheet" href="/WAKIKI LIBRARY-ikram/css/carousel.css">
+    <link rel="stylesheet" href="/WAKIKI LIBRARY-ikram/css/image-container.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+
+  <header>
+    <div class="container-header">
+        <div class="title-logo">
+            <h1><img src="/assets/img/logo.png" alt="Waikiki Library Logo" class="logo">Waikiki Library</h1>
+        </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search">
+        <button id="btn-search">Search</button>
+      </div>
+      <p class="bismilah-button">𝚃𝚘𝚍𝚊𝚢 𝚊 𝚛𝚎𝚊𝚍𝚎𝚛, 𝚝𝚘𝚖𝚘𝚛𝚛𝚘𝚠 𝚊 𝚕𝚎𝚊𝚍𝚎𝚛.</p>
+    </div>
+
+</header>
+
+<nav role="navigation">
+    <div id="menuToggle">
+       <input type="checkbox" />
+       <span></span>
+       <span></span>
+       <span></span>
+       <ul id="menu">
+          <a href="/main page.html"><li class="list">Home</li></a>
+          <a href="/WAKIKI LIBRARY-ikram/Genre.html"><li class="list">Genre</li></a>
+          <a href="/events.html"><li class="list">Events</li></a>
+          <a href="/profile.html"><li class="list">Profile</li></a>
+          <a href="/feedback.html" target="_self"><li>Feedback</li></a>
+       </ul>
+    </div>
+ </nav>
+
+<!----------------- space ----------------->
+ <div class="space"></div>
+
+<!----------------- audio ----------------->
+<audio id="leftAudio" src="audio/audio1.mp3" preload=""></audio>
+<audio id="rightAudio" src="audio/audio1.mp3" preload=""></audio>
+<audio id="rightAudio" src="audio/audio2.mp3" preload=""></audio>
+  
+  
+<!----------------- Drama ----------------->
+<section>
+  <div class="container">
+    <div class="header-section">
+      <h2>DRAMA</h2>
+    </div>
+    <div id="carousel" class="carousel-view">
+      <button id="leftSwipe" class="prev-btn button">
+        <svg viewBox="0 0 512 512" width="20" title="chevron-circle-left">
+          <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+        </svg>
+      </button>
+      <div class="item-list">
+        
+        <article class="image-container swiper-slide">
+          <a href="/assets/book details/The Way Of The house Husband/book details-The Way Of The house Husband.html"><img class="book-cover img-audio" data-audio-id="audio3" src="image/comedy-8.webp" alt="Image 1"></a>
+          <audio id="audio3" src="audio/audio5.mp3" ></audio>
+          <p class="book-title">The Way of The House Husband</p>
+          <div class="star-rating">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button class="add-to-history">add to List</button>
+        </article>
+
+        <article class="image-container swiper-slide">
+          <a href="#"><img class="book-cover active" src="image/comedy-1.jpeg" alt="Image 2"></a>
+          <p class="book-title">Operation: True Love</p>
+          <div class="star-rating">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button class="add-to-history">add to List</button>
+        </article>
+
+        <article class="image-container swiper-slide">
+          <a href="#"><img class="book-cover" src="image/comedy-2.jpg" alt="image"></a>
+          <p class="book-title">1HP Club</p>
+          <div class="star-rating">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button class="add-to-history">add to List</button>
+        </article>
+
+        <article class="image-container swiper-slide">
+          <a href="#"><img class="book-cover" src="image/comedy-3.jpeg" alt="image"></a>
+          <p class="book-title">Stalker X Stalker</p>
+          <div class="star-rating">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button class="add-to-history">add to List</button>
+        </article>
+
+        <article class="image-container swiper-slide">
+          <a href="#"><img class="book-cover" src="image/comedy-4.jpeg" alt="image"></a>
+          <p class="book-title">Chibi Maruko Chan</p>
+          <div class="star-rating">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button class="add-to-history">add to List</button>
+        </article>
+
+        <article class="image-container swiper-slide">
+          <a href="#"><img class="book-cover" src="image/comedy-5.jpg" alt="image"></a>
+          <p class="book-title">Devil Part-Timer!</p>
+          <div class="star-rating">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button class="add-to-history">add to List</button>
+        </article>
+
+        <article class="image-container swiper-slide">
+          <a href="#"><img class="book-cover" src="image/comedy-6.webp" alt="image"></a>
+          <p class="book-title">Shin Chan</p>
+          <div class="star-rating">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button class="add-to-history">add to List</button>
+        </article>
+
+        <article class="image-container swiper-slide">
+          <a href="#"><img class="book-cover" src="image/comedy-7.jpg" alt="image"></a>
+          <p class="book-title">Lawak Kampus</p>
+          <div class="star-rating">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button class="add-to-history">add to List</button>
+        </article>
+
+        <article class="image-container swiper-slide">
+          <a href="#"><img class="book-cover" src="image/comedy-9.jpg" alt="image"></a>
+          <p class="book-title">Food Wars!</p>
+          <div class="star-rating">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button class="add-to-history">add to List</button>
+        </article>
+
+        <article class="image-container swiper-slide">
+          <a href="#"><img class="book-cover" src="image/comedy-1.jpeg" alt="image"></a>
+          <p class="book-title">Operation: True Love</p>
+          <div class="star-rating">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button class="add-to-history">add to List</button>
+        </article>
+        
+      </div>
+        <button id="rightSwipe" class="next-btn button">
+        <svg viewBox="0 0 512 512" width="20" title="chevron-circle-right">
+          <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!----------------- FANTASY ----------------->
+<section>
+  <div class="container">
+    <div class="header-section">
+      <h2>FANTASY</h2>
+    </div>
+    <div id="carousel" class="carousel-view">
+      <button id="leftSwipe" class="prev-btn button">
+        <svg viewBox="0 0 512 512" width="20" title="chevron-circle-left">
+          <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+        </svg>
+      </button>
+      <div class="item-list">
+        
+        <article class="image-container swiper-slide">
+          <a href="/assets/book details/Demon Slayer/book details-Demon Slayer.html"><img id="img1" class="book-cover active img-audio" data-audio-id="audio1" src="image/SP-2.jpg" alt="image"></a>
+          <audio id="audio1" src="audio/audio3.mp3" ></audio>
+          <p class="book-title">Demon Slayer</p>
+          <div class="star-rating">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button class="add-to-history">add to List</button>
+        </article>
+        
+        <article class="image-container swiper-slide">
+          <a href="#"><img class="book-cover active" src="image/SP-1.jpg" alt="image"></a>
+          <p class="book-title">Fire Force</p>
+          <div class="star-rating">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button class="add-to-history">add to List</button>
+        </article>
+
+        <article class="image-container swiper-slide">
+          <a href="#"><img class="book-cover active" src="image/SP-3.jpg" alt="image"></a>
+          <p class="book-title">The Good Of High School</p>
+          <div class="star-rating">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button class="add-to-history">add to List</button>
+        </article>
+
+        <article class="image-container swiper-slide">
+          <a href="#"><img class="book-cover active" src="image/SP-4.jpg" alt="image"></a>
+          <p class="book-title">Kaiju No.8</p>
+          <div class="star-rating">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button class="add-to-history">add to List</button>
+        </article>
+
+        <article class="image-container swiper-slide">
+          <a href="#"><img class="book-cover active" src="image/SP-5.jpg" alt="image"></a>
+          <p class="book-title">Solo Levelling</p>
+          <div class="star-rating">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button class="add-to-history">add to List</button>
+        </article>
+
+        <article class="image-container swiper-slide">
+          <a href="#"><img class="book-cover active" src="image/SP-6.jpg" alt="image"></a>
+          <p class="book-title">My Hero Academia</p>
+          <div class="star-rating">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button class="add-to-history">add to List</button>
+        </article>
+
+        <article class="image-container swiper-slide">
+          <a href="#"><img class="book-cover active" src="image/SP-7.png" alt="image"></a>
+          <p class="book-title">unOrdinary</p>
+          <div class="star-rating">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button class="add-to-history">add to List</button>
+        </article>
+
+        <article class="image-container swiper-slide">
+          <a href="#"><img class="book-cover active" src="image/SP-8.jpg" alt="image"></a>
+          <p class="book-title">Shadow</p>
+          <div class="star-rating">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button class="add-to-history">add to List</button>
+        </article>
+
+        <article class="image-container swiper-slide">
+          <a href="#"><img class="book-cover active" src="image/SP-9.jpg" alt="image"></a>
+          <p class="book-title">Super Awkward Man</p>
+          <div class="star-rating">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button class="add-to-history">add to List</button>
+        </article>
+
+        <article class="image-container swiper-slide">
+          <a href="#"><img class="book-cover active" src="image/SP-10.jpeg" alt="image"></a>
+          <p class="book-title">Immortal Weakling</p>
+          <div class="star-rating">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button class="add-to-history">add to List</button>
+        </article>
+        
+      </div>
+        <button id="rightSwipe" class="next-btn button">
+        <svg viewBox="0 0 512 512" width="20" title="chevron-circle-right">
+          <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+  
+<!----------------- ACTION ----------------->
+<section>
+  <div class="container">
+    <div class="header-section">
+      <h2>ACTION</h2>
+    </div>
+    <div id="carousel" class="carousel-view">
+      <button id="leftSwipe" class="prev-btn button">
+        <svg viewBox="0 0 512 512" width="20" title="chevron-circle-left">
+          <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+        </svg>
+      </button>
+
+      <div class="item-list">
+        <article class="image-container swiper-slide">
+          <a href="/assets/book details/Tower Of God/book details-Tower of god.html"><img id="img2" class="book-cover active img-audio" data-audio-id="audio2" src="image/adventure-9.jpg" alt="image"></a>
+          <audio id="audio2" src="audio/audio4.mp3" ></audio>          
+          <p class="book-title">Tower of God</p>
+          <div class="star-rating">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button class="add-to-history">Add To List</button>
+        </article>
+        
+        <article class="image-container swiper-slide">
+          <a href="#"><img class="book-cover active" src="image/adventure-1.webp" alt="image"></a>
+          <p class="book-title">The Devil Butler</p>
+          <div class="star-rating">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button class="add-to-history">Add To List</button>
+        </article>
+
+        <article class="image-container swiper-slide">
+          <a href="#"><img class="book-cover active" src="image/adventure-2.webp" alt="image"></a>
+          <p class="book-title">World's Best Martial Artist</p>
+          <div class="star-rating">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button class="add-to-history">Add To List</button>
+        </article>
+
+        <article class="image-container swiper-slide">
+          <a href="#"><img class="book-cover active" src="image/adventure-3.jpg" alt="image"></a>
+          <p class="book-title">X-Venture</p>
+          <div class="star-rating">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button class="add-to-history">Add To List</button>
+        </article>
+
+        <article class="image-container swiper-slide">
+          <a href="#"><img class="book-cover active" src="image/adventure-4.jpg" alt="image"></a>
+          <p class="book-title">Astral Sutra</p>
+          <div class="star-rating">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button class="add-to-history">Add To List</button>
+        </article>
+
+        <article class="image-container swiper-slide">
+          <a href="#"><img class="book-cover active" src="image/adventure-5.png" alt="image"></a>
+          <p class="book-title">Tower Into The Clouds</p>
+          <div class="star-rating">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button class="add-to-history">Add To List</button>
+        </article>
+
+        <article class="image-container swiper-slide">
+          <a href="#"><img class="book-cover active" src="image/adventure-6.jpg" alt="image"></a>
+          <p class="book-title">Fullmetal Alchemist</p>
+          <div class="star-rating">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button class="add-to-history">Add To List</button>
+        </article>
+
+        <article class="image-container swiper-slide">
+          <a href="#"><img class="book-cover active" src="image/adventure-7.jpg" alt="image"></a>
+          <p class="book-title">Shield Hero</p>
+          <div class="star-rating">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button class="add-to-history">Add To List</button>
+        </article>
+
+        <article class="image-container swiper-slide">
+          <a href="#"><img class="book-cover active" src="image/adventure-8.jpg" alt="image"></a>
+          <p class="book-title">Made In Abyss</p>
+          <div class="star-rating">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button class="add-to-history">Add To List</button>
+
+      
+
+        </article>
+
+
+        <article class="image-container swiper-slide">
+          <a href="#"><img class="book-cover active" src="image/adventure-10.jpg" alt="image"></a>
+          <p class="book-title">Hunter X Hunter</p>
+          <div class="star-rating">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button class="add-to-history">Add To List</button>
+        </article>
+        
+      </div>
+        <button id="rightSwipe" class="next-btn button">
+        <svg viewBox="0 0 512 512" width="20" title="chevron-circle-right">
+          <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+      <div class="footer-column">
+          <img src="image/logo.png" alt="Waikiki Library Logo" style="width: 150px;">
+          <p>WAIKIKI LIBRARY</p>
+      </div>
+      <div class="footer-column">
+          <h3>About</h3>
+          <ul>
+              <li><a href="#">Awards</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Terms of services</a></li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h3>Company</h3>
+          <ul>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Our team</a></li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h3>Contact</h3>
+          <ul>
+              <li>+601127538377 (Azlan)</li>
+              <li>Waikiki_library@email.com</li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h3>Social</h3>
+          <div class="social-icons">
+              <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+              <a href="https://x.com/home"><i class="fab fa-twitter"></i></a>
+          </div>
+      </div>
+  </div>
+  <div class="copyright">
+      © All Rights Reserved By Waikiki Library
+  </div>
+</footer>
+
+<!-- Show more(dropdown  -more genre) -->
+
+<script src="/WAKIKI LIBRARY-ikram/js/carousel.js"></script>
+<script src="/WAKIKI LIBRARY-ikram/js/buttonAudio.js"></script>
+<script src="/WAKIKI LIBRARY-ikram/js/profile1.2.js"></script>
+</body>
+</html>
